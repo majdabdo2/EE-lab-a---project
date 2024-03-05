@@ -1,0 +1,138 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Owner/OneDrive - Technion/mabada 1a/project/project(20.8.23)_restored/project(14.9.23)_restored/simulation/qsim
+vgame_controller
+Z1 !s110 1694701649
+!i10b 1
+!s100 HkzldLMW_?mk<>G<kWMYJ1
+InzI;Bm[LS65Kfez>Q:3>V1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1694701648
+Z3 8Lab1Demo.vo
+Z4 FLab1Demo.vo
+Z5 L0 32
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1694701649.000000
+Z8 !s107 Lab1Demo.vo|
+Z9 !s90 -work|work|Lab1Demo.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vgame_controller_vlg_vec_tst
+R1
+!i10b 1
+!s100 ^`@kglFT^3EmX:Sl=XHd31
+I2:kECQEGKKZ]idgUo3Z^;3
+R2
+R0
+w1694701647
+8Waveform5.vwf.vt
+FWaveform5.vwf.vt
+Z12 L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform5.vwf.vt|
+!s90 -work|work|Waveform5.vwf.vt|
+!i113 1
+R10
+R11
+vsmiley_move
+Z13 !s110 1694705978
+!i10b 1
+!s100 4=mj=>Vc:`Kj`b7McYGL<3
+IYjN3A7]Ci7Pa``1CRZ1iI2
+R2
+R0
+w1694705977
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+!s108 1694705977.000000
+R8
+R9
+!i113 1
+R10
+R11
+vsmiley_move_vlg_vec_tst
+R13
+!i10b 1
+!s100 9;HPa^T0[GPIb=bM`>>N^0
+IKN<^hz6DI;8X:Y`kmg4;K0
+R2
+R0
+w1694705976
+8Waveform6.vwf.vt
+FWaveform6.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+!s108 1694705978.000000
+!s107 Waveform6.vwf.vt|
+!s90 -work|work|Waveform6.vwf.vt|
+!i113 1
+R10
+R11
+vTOP_VGA_DEMO_KBD
+Z14 !s110 1694580767
+!i10b 1
+!s100 f506_ZcboZ3LjV8VJ[cf>1
+IVQ9bk@la<jgR>MokOaL7J3
+R2
+R0
+w1694580765
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+!s108 1694580766.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@t@o@p_@v@g@a_@d@e@m@o_@k@b@d
+vTOP_VGA_DEMO_KBD_vlg_vec_tst
+R14
+!i10b 1
+!s100 G_b<ddefgRd3o9dVF0b^G1
+IDehnE:SReDOJ<D;nHL_kz2
+R2
+R0
+w1694580763
+8Waveform4.vwf.vt
+FWaveform4.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+!s108 1694580767.000000
+!s107 Waveform4.vwf.vt|
+!s90 -work|work|Waveform4.vwf.vt|
+!i113 1
+R10
+R11
+n@t@o@p_@v@g@a_@d@e@m@o_@k@b@d_vlg_vec_tst
