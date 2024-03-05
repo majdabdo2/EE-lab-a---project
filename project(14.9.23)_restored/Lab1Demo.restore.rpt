@@ -1,5 +1,5 @@
 Restore Archived Project report for Lab1Demo
-Wed Sep 13 04:38:54 2023
+Wed Sep 13 19:48:19 2023
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------------+
 ; Restore Archived Project Summary                                        ;
 +---------------------------------+---------------------------------------+
-; Restore Archived Project Status ; Successful - Wed Sep 13 04:38:54 2023 ;
+; Restore Archived Project Status ; Successful - Wed Sep 13 19:48:19 2023 ;
 ; Revision Name                   ; Lab1Demo                              ;
 ; Top-level Entity Name           ; TOP_VGA_DEMO_KBD                      ;
 ; Family                          ; Cyclone V                             ;
@@ -47,18 +47,25 @@ agreement for further details.
 +-----------------------------------+
 ; Restore Archived Project Messages ;
 +-----------------------------------+
-Info: Successfully restored 'C:/Users/Owner/OneDrive - Technion/mabada 1a/project/project(20.8.23)_restored/project(29.8.23).qar' into the 'C:/Users/Owner/OneDrive - Technion/mabada 1a/project/project(20.8.23)_restored/project(29.8.23)_restored/' directory
+Info: Successfully restored 'C:/Users/Owner/OneDrive - Technion/mabada 1a/project/project(20.8.23)_restored/project(14.9.23).qar' into the 'C:/Users/Owner/OneDrive - Technion/mabada 1a/project/project(20.8.23)_restored/project(14.9.23)_restored/' directory
 Info: Generated report 'Lab1Demo.restore.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.0/quartus/common/tcl/apps/qpm/qar.tcl was successful
-Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4821 megabytes
-    Info: Processing ended: Wed Sep 13 04:38:54 2023
+Info: Quartus Prime Shell was successful. 0 errors, 121 warnings
+    Info: Peak virtual memory: 4835 megabytes
+    Info: Processing ended: Wed Sep 13 19:48:19 2023
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 
++----------------+
+; Files Restored ;
++----------------+
+; File Name      ;
++----------------+
+
+
 +------------------------------------------------------------+
-; Files Restored                                             ;
+; Files Not Restored                                         ;
 +------------------------------------------------------------+
 ; File Name                                                  ;
 +------------------------------------------------------------+
@@ -75,6 +82,7 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; Lab1Demo.qpf                                               ;
 ; Lab1Demo.qsf                                               ;
 ; Lab1Demo_assignment_defaults.qdf                           ;
+; LoseBitMap.sv                                              ;
 ; Number_position.bsf                                        ;
 ; Number_position.qip                                        ;
 ; Number_position.v                                          ;
@@ -98,21 +106,36 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; RTL/KEYBOARDX/random.sv                                    ;
 ; RTL/KEYBOARDX/simple_up_counter.sv                         ;
 ; RTL/Seg7/SEG7.SV                                           ;
+; RTL/VGA/AxeBitMap.sv                                       ;
 ; RTL/VGA/Ghost_Block_T.bdf                                  ;
 ; RTL/VGA/Ghost_green_Block_T.bdf                            ;
 ; RTL/VGA/HART_DISPLAY.bdf                                   ;
 ; RTL/VGA/HartsMatrixBitMap.sv                               ;
+; RTL/VGA/Lab1Demo.sv                                        ;
+; RTL/VGA/Life1_BitMap.sv                                    ;
+; RTL/VGA/Life2_BitMap.sv                                    ;
+; RTL/VGA/Life3_BitMap.sv                                    ;
+; RTL/VGA/LifeBitMap.sv                                      ;
 ; RTL/VGA/NumbersBitMap.sv                                   ;
+; RTL/VGA/NumbersBitMap__Hand.sv                             ;
+; RTL/VGA/NumbersBitMap__Ten.sv                              ;
+; RTL/VGA/NumbersBitMap_one.sv                               ;
+; RTL/VGA/Restartbitmap.sv                                   ;
+; RTL/VGA/STONEWALL_DISPLAY.bdf                              ;
 ; RTL/VGA/Smiley_Block_T.bdf                                 ;
+; RTL/VGA/StoneWallMatrixBitMap.sv                           ;
 ; RTL/VGA/TOP_VGA_DEMO_KBD.bdf                               ;
 ; RTL/VGA/VGA_Controller.sv                                  ;
 ; RTL/VGA/WALL_DISPLAY.bdf                                   ;
+; RTL/VGA/WOODENWALL_DISPLAY.bdf                             ;
 ; RTL/VGA/WallMatrixBitMap.sv                                ;
+; RTL/VGA/WoodenWallMatrixBitMap.sv                          ;
 ; RTL/VGA/back_ground_draw.sv                                ;
 ; RTL/VGA/game_controller.sv                                 ;
 ; RTL/VGA/ghostBitMap.sv                                     ;
 ; RTL/VGA/ghost_greenBitMap.sv                               ;
 ; RTL/VGA/ghost_move.sv                                      ;
+; RTL/VGA/green_ghost_move.sv                                ;
 ; RTL/VGA/objects_mux.sv                                     ;
 ; RTL/VGA/smileyBitMap.sv                                    ;
 ; RTL/VGA/smiley_move.sv                                     ;
@@ -124,19 +147,48 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; RTL/VGA/valX.v                                             ;
 ; RTL/VGA/valX_bb.v                                          ;
 ; RTL/VGA/valX_inst.v                                        ;
+; RTL/pixil-frame-0667BitMap.mif                             ;
+; Waveform.vwf                                               ;
+; Waveform1.vwf                                              ;
+; Waveform2.vwf                                              ;
+; Waveform3.vwf                                              ;
+; WinBitMap.sv                                               ;
 ; assignment_defaults.qdf                                    ;
 ; constraints/DE10_Standard_Audio.sdc                        ;
 ; constraints/pin.tcl                                        ;
+; counter_for_audio.sv                                       ;
 ; db/stp1_auto_stripped.stp                                  ;
+; five_sec_counter.sv                                        ;
+; one_sec_counter.sv                                         ;
 ; output_files/Chain1.cdf                                    ;
 ; output_files/stp1.stp                                      ;
+; param_0.bsf                                                ;
+; param_0.qip                                                ;
+; param_0.v                                                  ;
+; param_0_bb.v                                               ;
+; param_128.bsf                                              ;
+; param_128.qip                                              ;
+; param_128.v                                                ;
+; param_128_bb.v                                             ;
+; param_160.bsf                                              ;
+; param_160.qip                                              ;
+; param_160.v                                                ;
+; param_160_bb.v                                             ;
+; param_256.bsf                                              ;
+; param_256.qip                                              ;
+; param_256.v                                                ;
+; param_256_bb.v                                             ;
+; param_32.bsf                                               ;
+; param_32.qip                                               ;
+; param_32.v                                                 ;
+; param_32_bb.v                                              ;
+; param_64d.bsf                                              ;
+; param_64d.qip                                              ;
+; param_64d.v                                                ;
+; param_64d_bb.v                                             ;
+; reset_game.sv                                              ;
+; startbitmap.sv                                             ;
+; swap.sv                                                    ;
 +------------------------------------------------------------+
-
-
-+--------------------+
-; Files Not Restored ;
-+--------------------+
-; File Name          ;
-+--------------------+
 
 

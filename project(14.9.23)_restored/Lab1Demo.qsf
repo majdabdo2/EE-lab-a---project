@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSXFC6D6F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY TOP_VGA_DEMO_KBD
+set_global_assignment -name TOP_LEVEL_ENTITY smiley_move
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:51:54  JULY 08, 2018"
 set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Lite Edition"
@@ -180,7 +180,6 @@ set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INCREMENTAL_ROUTING=1" -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[25] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[27] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=128" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id auto_signaltap_0
@@ -193,6 +192,264 @@ set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_T
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[12] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to clk -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[20] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[15] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[18] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[21] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[26] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[2] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[3] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[4] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[6] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[13] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[14] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[24] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to "Smiley_Block_T:inst1|HitEdgeCode[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to "Smiley_Block_T:inst1|HitEdgeCode[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to "Smiley_Block_T:inst1|HitEdgeCode[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to "Smiley_Block_T:inst1|HitEdgeCode[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[10] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[11] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[12] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[13] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[14] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[15] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[16] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[17] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[18] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[19] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[20] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[21] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[22] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[23] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[24] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[25] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[26] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[27] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[28] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[29] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[30] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[31] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[32] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[33] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[34] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[35] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[36] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[37] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[38] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[39] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[40] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[41] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[42] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[43] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[44] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[45] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[46] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[47] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[48] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[49] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[50] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[51] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[52] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[53] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[54] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[55] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[56] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[57] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[58] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[59] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[60] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[61] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[62] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[63] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[64] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[65] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[66] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[67] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[68] -to collision -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to "Smiley_Block_T:inst1|HitEdgeCode[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to "Smiley_Block_T:inst1|HitEdgeCode[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to "Smiley_Block_T:inst1|HitEdgeCode[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to "Smiley_Block_T:inst1|HitEdgeCode[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[10] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[11] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[12] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[13] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[14] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[15] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[16] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[17] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[18] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[19] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[20] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[21] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[22] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[23] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[24] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[25] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[26] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[27] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[28] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[29] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[30] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[31] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[32] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[33] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[34] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[35] -to "Smiley_Block_T:inst1|smiley_move:inst|Xspeed_PS[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[36] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[37] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[38] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[39] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[40] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[41] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[42] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[43] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[44] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[45] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[46] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[47] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[48] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[49] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[50] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[51] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[52] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[53] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[54] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[55] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[56] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[57] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[58] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[59] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[60] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[61] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[62] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[63] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[64] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[65] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[66] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[67] -to "Smiley_Block_T:inst1|smiley_move:inst|Yspeed_PS[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[68] -to collision -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=69" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=69" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=69" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=228" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[0] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[7] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[19] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[22] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[27] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[31] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_global_assignment -name BDF_FILE RTL/VGA/TOP_VGA_DEMO_KBD.bdf
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/game_controller.sv
+set_global_assignment -name BDF_FILE RTL/VGA/Smiley_Block_T.bdf
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/smileyBitMap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/square_object.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/back_ground_draw.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/square_Hart_object.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/HartsMatrixBitMap.sv
+set_global_assignment -name BDF_FILE RTL/VGA/HART_DISPLAY.bdf
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/smiley_move.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/objects_mux.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/VGA_Controller.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/NumbersBitMap.sv
+set_global_assignment -name QIP_FILE RTL/VGA/valX.qip
+set_global_assignment -name TCL_SCRIPT_FILE constraints/pin.tcl
+set_global_assignment -name BDF_FILE RTL/KEYBOARDX/TOP_KBD.bdf
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARDX/lpf.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARDX/keyPad_decoder.sv
+set_global_assignment -name BDF_FILE RTL/KEYBOARDX/KBDINTF.bdf
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARDX/byterec.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARDX/bitrec.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARDX/simple_up_counter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARDX/random.sv
+set_global_assignment -name CDF_FILE output_files/Chain1.cdf
+set_global_assignment -name SDC_FILE DE10_Standard_Audio.sdc
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/Seg7/SEG7.SV
+set_global_assignment -name BDF_FILE RTL/AUDIO/TOP_AUDIO.bdf
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/AUDIO/SinTable.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/AUDIO/addr_counter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/AUDIO/prescaler.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/AUDIO/ToneDecoder.sv
+set_global_assignment -name BDF_FILE RTL/AUDIO/AUDIO.bdf
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/AUDIO/audio_codec_controller/i2c.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/AUDIO/audio_codec_controller/DualSerial2parallel.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/AUDIO/audio_codec_controller/clock_500.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/AUDIO/audio_codec_controller/audio_codec_controller.sv
+set_global_assignment -name QIP_FILE Number_position.qip
+set_global_assignment -name QIP_FILE CLK_31P5.qip
+set_global_assignment -name SIP_FILE CLK_31P5.sip
+set_global_assignment -name SIGNALTAP_FILE output_files/stp1.stp
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/WallMatrixBitMap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/square_Wall_object.sv
+set_global_assignment -name BDF_FILE RTL/VGA/WALL_DISPLAY.bdf
+set_global_assignment -name BDF_FILE RTL/VGA/Ghost_Block_T.bdf
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/ghost_move.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/ghostBitMap.sv
+set_global_assignment -name BDF_FILE RTL/VGA/Ghost_green_Block_T.bdf
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/ghost_greenBitMap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/NumbersBitMap_one.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/NumbersBitMap__Hand.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/NumbersBitMap__Ten.sv
+set_global_assignment -name QIP_FILE param_0.qip
+set_global_assignment -name QIP_FILE param_32.qip
+set_global_assignment -name QIP_FILE param_64d.qip
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/Life1_BitMap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/Lab1Demo.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/Life2_BitMap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/Life3_BitMap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/LifeBitMap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/WoodenWallMatrixBitMap.sv
+set_global_assignment -name BDF_FILE RTL/VGA/WOODENWALL_DISPLAY.bdf
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/AxeBitMap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE WinBitMap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE LoseBitMap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE one_sec_counter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE five_sec_counter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/Restartbitmap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/StoneWallMatrixBitMap.sv
+set_global_assignment -name BDF_FILE RTL/VGA/STONEWALL_DISPLAY.bdf
+set_global_assignment -name SYSTEMVERILOG_FILE reset_game.sv
+set_global_assignment -name SYSTEMVERILOG_FILE startbitmap.sv
+set_global_assignment -name QIP_FILE param_160.qip
+set_global_assignment -name QIP_FILE param_256.qip
+set_global_assignment -name QIP_FILE param_128.qip
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/green_ghost_move.sv
+set_global_assignment -name SYSTEMVERILOG_FILE swap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE counter_for_audio.sv
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_ADCDAT
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUDOUT[0]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUDOUT[1]
@@ -259,153 +516,69 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to altera_reserved_tdi
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to altera_reserved_tdo
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to altera_reserved_tms
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to resetN_pin
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[15] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[18] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[19] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[21] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[26] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to "Smiley_Block_T:inst1|smileyOffsetX[0]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to "Smiley_Block_T:inst1|smileyOffsetX[10]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to "Smiley_Block_T:inst1|smileyOffsetX[1]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to "Smiley_Block_T:inst1|smileyOffsetX[2]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to "Smiley_Block_T:inst1|smileyOffsetX[3]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to "Smiley_Block_T:inst1|smileyOffsetX[4]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to "Smiley_Block_T:inst1|smileyOffsetX[5]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to "Smiley_Block_T:inst1|smileyOffsetX[6]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to "Smiley_Block_T:inst1|smileyOffsetX[7]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to "Smiley_Block_T:inst1|smileyOffsetX[8]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[10] -to "Smiley_Block_T:inst1|smileyOffsetX[9]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[11] -to "Smiley_Block_T:inst1|smileyOffsety[0]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[12] -to "Smiley_Block_T:inst1|smileyOffsety[10]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[13] -to "Smiley_Block_T:inst1|smileyOffsety[1]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[14] -to "Smiley_Block_T:inst1|smileyOffsety[2]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[15] -to "Smiley_Block_T:inst1|smileyOffsety[3]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[16] -to "Smiley_Block_T:inst1|smileyOffsety[4]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[17] -to "Smiley_Block_T:inst1|smileyOffsety[5]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[18] -to "Smiley_Block_T:inst1|smileyOffsety[6]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[19] -to "Smiley_Block_T:inst1|smileyOffsety[7]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[20] -to "Smiley_Block_T:inst1|smileyOffsety[8]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[21] -to "Smiley_Block_T:inst1|smileyOffsety[9]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[22] -to keyIsPressed[0] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[23] -to keyIsPressed[1] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[24] -to keyIsPressed[2] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[25] -to keyIsPressed[3] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[26] -to keyIsPressed[4] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[27] -to keyIsPressed[5] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[28] -to keyIsPressed[6] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[29] -to keyIsPressed[7] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[30] -to keyIsPressed[8] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[31] -to keyIsPressed[9] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to "Smiley_Block_T:inst1|smileyOffsetX[0]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to "Smiley_Block_T:inst1|smileyOffsetX[10]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to "Smiley_Block_T:inst1|smileyOffsetX[1]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to "Smiley_Block_T:inst1|smileyOffsetX[2]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to "Smiley_Block_T:inst1|smileyOffsetX[3]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to "Smiley_Block_T:inst1|smileyOffsetX[4]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to "Smiley_Block_T:inst1|smileyOffsetX[5]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to "Smiley_Block_T:inst1|smileyOffsetX[6]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to "Smiley_Block_T:inst1|smileyOffsetX[7]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to "Smiley_Block_T:inst1|smileyOffsetX[8]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[10] -to "Smiley_Block_T:inst1|smileyOffsetX[9]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[11] -to "Smiley_Block_T:inst1|smileyOffsety[0]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[12] -to "Smiley_Block_T:inst1|smileyOffsety[10]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[13] -to "Smiley_Block_T:inst1|smileyOffsety[1]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[14] -to "Smiley_Block_T:inst1|smileyOffsety[2]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[15] -to "Smiley_Block_T:inst1|smileyOffsety[3]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[16] -to "Smiley_Block_T:inst1|smileyOffsety[4]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[17] -to "Smiley_Block_T:inst1|smileyOffsety[5]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[18] -to "Smiley_Block_T:inst1|smileyOffsety[6]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[19] -to "Smiley_Block_T:inst1|smileyOffsety[7]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[20] -to "Smiley_Block_T:inst1|smileyOffsety[8]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[21] -to "Smiley_Block_T:inst1|smileyOffsety[9]" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[22] -to keyIsPressed[0] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[23] -to keyIsPressed[1] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[24] -to keyIsPressed[2] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[25] -to keyIsPressed[3] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[26] -to keyIsPressed[4] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[27] -to keyIsPressed[5] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[28] -to keyIsPressed[6] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[29] -to keyIsPressed[7] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[30] -to keyIsPressed[8] -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[31] -to keyIsPressed[9] -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=32" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=32" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=32" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=117" -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[0] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[2] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[3] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[4] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[6] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[7] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[13] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[14] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[22] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[24] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[31] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Axe_counter[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Axe_counter[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Axe_counter[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Axe_counter[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Rand[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Rand[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SingleHitPulse
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Stonewall_collision
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WallRGB[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WallRGB[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WallRGB[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WallRGB[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WallRGB[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WallRGB[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WallRGB[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WallRGB[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Woodenwall_collision
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to coin_collision
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to collision
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to collision_greenghost
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to collision_pac_axe
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to collision_pac_greenghost
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to collision_pac_redghost
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to collision_redghost
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to die
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to drawing_request_1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to drawing_request_2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to drawing_request_Axe
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to drawing_request_Ball
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to drawing_request_Stonewall
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to drawing_request_Woodenwall
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to drawing_request_coin
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to drawing_request_greenghost
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to drawing_request_redghost
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to drawing_request_wall
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to enter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to life_counter[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to life_counter[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to life_counter[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to life_counter[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to loseDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to random[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to random[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to reset
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to resetN
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to score[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to score[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to score[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to score[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to score[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to score[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to score[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to score[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sound[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sound[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sound[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sound[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to startDR
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to startOfFrame
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to stop
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to win
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to winDR
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name BDF_FILE RTL/VGA/TOP_VGA_DEMO_KBD.bdf
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/game_controller.sv
-set_global_assignment -name BDF_FILE RTL/VGA/Smiley_Block_T.bdf
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/smileyBitMap.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/square_object.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/back_ground_draw.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/square_Hart_object.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/HartsMatrixBitMap.sv
-set_global_assignment -name BDF_FILE RTL/VGA/HART_DISPLAY.bdf
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/smiley_move.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/objects_mux.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/VGA_Controller.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/NumbersBitMap.sv
-set_global_assignment -name QIP_FILE RTL/VGA/valX.qip
-set_global_assignment -name TCL_SCRIPT_FILE constraints/pin.tcl
-set_global_assignment -name BDF_FILE RTL/KEYBOARDX/TOP_KBD.bdf
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARDX/lpf.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARDX/keyPad_decoder.sv
-set_global_assignment -name BDF_FILE RTL/KEYBOARDX/KBDINTF.bdf
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARDX/byterec.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARDX/bitrec.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARDX/simple_up_counter.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARDX/random.sv
-set_global_assignment -name CDF_FILE output_files/Chain1.cdf
-set_global_assignment -name SDC_FILE DE10_Standard_Audio.sdc
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/Seg7/SEG7.SV
-set_global_assignment -name BDF_FILE RTL/AUDIO/TOP_AUDIO.bdf
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/AUDIO/SinTable.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/AUDIO/addr_counter.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/AUDIO/prescaler.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/AUDIO/ToneDecoder.sv
-set_global_assignment -name BDF_FILE RTL/AUDIO/AUDIO.bdf
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/AUDIO/audio_codec_controller/i2c.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/AUDIO/audio_codec_controller/DualSerial2parallel.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/AUDIO/audio_codec_controller/clock_500.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/AUDIO/audio_codec_controller/audio_codec_controller.sv
-set_global_assignment -name QIP_FILE Number_position.qip
-set_global_assignment -name QIP_FILE CLK_31P5.qip
-set_global_assignment -name SIP_FILE CLK_31P5.sip
-set_global_assignment -name SIGNALTAP_FILE output_files/stp1.stp
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/WallMatrixBitMap.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/square_Wall_object.sv
-set_global_assignment -name BDF_FILE RTL/VGA/WALL_DISPLAY.bdf
-set_global_assignment -name BDF_FILE RTL/VGA/Ghost_Block_T.bdf
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/ghost_move.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/ghostBitMap.sv
-set_global_assignment -name BDF_FILE RTL/VGA/Ghost_green_Block_T.bdf
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/ghost_greenBitMap.sv
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
 set_global_assignment -name SLD_FILE db/stp1_auto_stripped.stp
