@@ -1,0 +1,165 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "topLeftX[0]",
+					"strict" : false
+				},
+				{
+					"name" : "topLeftX[1]",
+					"strict" : false
+				},
+				{
+					"name" : "topLeftX[2]",
+					"strict" : false
+				},
+				{
+					"name" : "topLeftX[3]",
+					"strict" : false
+				},
+				{
+					"name" : "topLeftX[4]",
+					"strict" : false
+				},
+				{
+					"name" : "topLeftX[5]",
+					"strict" : false
+				},
+				{
+					"name" : "topLeftX[6]",
+					"strict" : false
+				},
+				{
+					"name" : "topLeftX[7]",
+					"strict" : false
+				},
+				{
+					"name" : "topLeftX[8]",
+					"strict" : false
+				},
+				{
+					"name" : "topLeftX[9]",
+					"strict" : false
+				},
+				{
+					"name" : "topLeftX[10]",
+					"strict" : false
+				},
+				{
+					"name" : "topLeftY[0]",
+					"strict" : false
+				},
+				{
+					"name" : "topLeftY[1]",
+					"strict" : false
+				},
+				{
+					"name" : "topLeftY[2]",
+					"strict" : false
+				},
+				{
+					"name" : "topLeftY[3]",
+					"strict" : false
+				},
+				{
+					"name" : "topLeftY[4]",
+					"strict" : false
+				},
+				{
+					"name" : "topLeftY[5]",
+					"strict" : false
+				},
+				{
+					"name" : "topLeftY[6]",
+					"strict" : false
+				},
+				{
+					"name" : "topLeftY[7]",
+					"strict" : false
+				},
+				{
+					"name" : "topLeftY[8]",
+					"strict" : false
+				},
+				{
+					"name" : "topLeftY[9]",
+					"strict" : false
+				},
+				{
+					"name" : "topLeftY[10]",
+					"strict" : false
+				},
+				{
+					"name" : "temp[0]",
+					"strict" : false
+				},
+				{
+					"name" : "temp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Y_direction_key[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Y_direction_key[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Y_direction_key[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Y_direction_key[6]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "resetN",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "stop",
+					"strict" : false
+				},
+				{
+					"name" : "startOfFrame",
+					"strict" : false
+				},
+				{
+					"name" : "collision",
+					"strict" : false
+				},
+				{
+					"name" : "collision_pac_redghost",
+					"strict" : false
+				},
+				{
+					"name" : "HitEdgeCode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HitEdgeCode[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HitEdgeCode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HitEdgeCode[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
